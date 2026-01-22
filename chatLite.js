@@ -1,6 +1,7 @@
 (function (global) {
     async function chat(prompt) {
         try {
+            
             const response = await fetch("https://test--justaextraa.replit.app/openrouter", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
