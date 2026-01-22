@@ -1,6 +1,6 @@
 (function(global) {
     function chat(prompt) {
-        window._chat_result = null
+        global._chat_result = null
         
         fetch('https://test--justaextraa.replit.app/openrouter', {
         method: 'POST',
