@@ -11,7 +11,7 @@
         .then(data => {
             const model = data.model || "unknown model";
             const answer = data.answer || "No response";
-            global._vector = model + " : " + answer;
+            global._vector = answer;
         })
         .catch(e => {
             console.error(e);
