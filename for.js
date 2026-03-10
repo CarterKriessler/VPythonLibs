@@ -4,30 +4,10 @@
         
         fetch('https://test--justaextraa.replit.app/openrouter', {
         method: 'POST',
-        mode: 'cors',
         headers: {
             'Content-Type': 'application/json',
-            'Accept': 'application/json'
         },
         body: JSON.stringify({prompt: prompt})
-        })
-        .then(async r => {
-            console.log("Status:", r.status);
-            console.log("Status text:", r.statusText);
-
-            const headers = {};
-            r.headers.forEach((v, k) => headers[k] = v);
-            console.log("Response headers:", headers);
-
-            const text = await r.text();
-            console.log("Raw response body:", text);
-
-            try {
-                return JSON.parse(text);
-            } catch (e) {
-                console.error("JSON parse failed");
-                throw e;
-            }
         })
         .then(r => r.json())
         .then(data => {
