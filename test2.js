@@ -2,7 +2,7 @@
     function chat(prompt) {
         global._vector = null
         
-        fetch('https://test--justaextraa.replit.app/openrouter', {
+        fetch('https://a5ea77b6-2487-4660-9acb-e276bcf089fc-00-2vt95qf3sf78n.janeway.replit.dev/openrouter', {
         method: 'POST',
         mode: 'cors',
         headers: {
