@@ -4,10 +4,8 @@
         
         fetch('https://a5ea77b6-2487-4660-9acb-e276bcf089fc-00-2vt95qf3sf78n.janeway.replit.dev/openrouter', {
         method: 'POST',
-        mode: 'cors',
         headers: {
             'Content-Type': 'application/json',
-            'Accept': 'application/json'
         },
         body: JSON.stringify({prompt: prompt})
         })
