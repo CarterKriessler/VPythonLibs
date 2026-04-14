@@ -2,7 +2,7 @@
     function chat(prompt) {
         global._vector = null
         
-        fetch('https://test--justaextraa.replit.app/openrouter', {
+        fetch('https://server-lite--LightInIn1.replit.app/openrouter', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
