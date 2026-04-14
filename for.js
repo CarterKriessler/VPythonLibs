@@ -13,7 +13,8 @@
         .then(data => {
             const model = data.model || "unknown model";
             const answer = data.answer || "No response";
-            global._vector = answer;
+            const tokens = data.tokens || null;
+            global._vector = "["+tokens+"] " + answer;
         })
         .catch(e => {
             console.error(e);
