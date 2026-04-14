@@ -1,5 +1,5 @@
 (function(global) {
-    function chat(prompt) {
+    function chat(amnt, prompt) {
         global._vector = null
         
         fetch('https://server-lite--LightInIn1.replit.app/openrouter', {
@@ -7,7 +7,7 @@
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({prompt: prompt})
+        body: JSON.stringify({prompt: prompt, tokens: amnt})
         })
         .then(r => r.json())
         .then(data => {
